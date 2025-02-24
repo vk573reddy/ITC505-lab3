@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Delivery Research</title>
+    <style>
+        @font-face {
+            font-family: 'Creepster';
+            src: url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+        }
+        body {
+            font-family: 'Creepster', cursive;
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Delivering Custom Fonts to a Browser</h1>
+    <p>One method to serve a custom font is by using the <code>@font-face</code> rule in CSS. 
+       This allows the browser to download and use the font even if it is not installed on the user’s device.</p>
+    <p>Another approach is to use a font hosted on an external CDN like Google Fonts. 
+       This method ensures faster delivery and better compatibility across browsers.</p>
+    <p>For this assignment, I have chosen the 'Creepster' font, which is loaded via Google Fonts.</p>
+    
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
